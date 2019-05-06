@@ -1,0 +1,15 @@
+{
+  "name": "wovven",
+  "version": "1.0.0",
+  "description": "wovven to discord prototype",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "express": "^4.16.4"
+  }
+}
