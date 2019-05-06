@@ -9,6 +9,9 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.use(express.static(__dirname));
+//app.use(express.static(__dirname + '/apporwhateverhere'));
+
 app.listen(port || 1337, function(){
     console.log('Node.js is running on ' + port + '.');
 });
@@ -21,3 +24,7 @@ client.login(token);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
+
+function addrole(){
+    console.log('Added role');
+}
